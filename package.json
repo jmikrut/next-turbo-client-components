@@ -1,12 +1,13 @@
 {
   "private": true,
   "scripts": {
+    "dev:turbo": "next dev --turbo",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "canary",
+    "next": "^14.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
