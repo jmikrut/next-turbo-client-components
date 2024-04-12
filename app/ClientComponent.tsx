@@ -2,7 +2,8 @@
 
 import React from "react";
 
-export const context = React.createContext({})
+// Turbo goes boom because of this line
+const context = React.createContext({})
 
 export const ClientComponent: React.FC = () => {
   return (
