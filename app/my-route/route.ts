@@ -1,7 +1,7 @@
-import { ClientComponent } from "../ClientComponent"
+import { ElementButton } from "@payloadcms/richtext-slate"
 
 export const GET = () => {
   return Response.json({
-    clientComponent: typeof ClientComponent
+    typeofElementButton: typeof ElementButton,
   })
 }
