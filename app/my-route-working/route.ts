@@ -3,8 +3,9 @@ import { ClientComponent } from "../ClientComponent"
 export const GET = () => {
   // This import works in Webpack, and used to work in Turbopack.
 
-  // But any versions after 14.2.0-canary.33 (i.e. 14.2.0) now break Turbopack,
-  // even in spite of the errored file indeed having 'use client' at the top.
+  // Looks like it was fixed in 14.3.0-canary.8.
+  // Corresponding GitHub issue:
+  // https://github.com/vercel/next.js/issues/64412
 
   return Response.json({
     typeofClientComponent: typeof ClientComponent,
